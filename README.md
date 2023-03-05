@@ -14,12 +14,14 @@ It will run on port 8080 by default
 ```
 
 ## Data
-For this sample application as the database H2 is used with Flyway support and initial schema creation 
-and sample data is inserted using below sql
+For this sample application as the database H2 is used with Flyway support.
+Initial schema creation and sample data is inserted using below sql
+
 resources/db/migration/V1__init.sql
 
 ## Endpoints
 to retrieve accounts - http://localhost:8080/api/accounts/{customerId}
+
 to retrieve transactions - http://localhost:8080/api/accounts/{accountId}/transactions
 
 

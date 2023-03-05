@@ -1,7 +1,7 @@
-package com.anz.wholesale.controller;
+package com.anz.wholesale.account.controller;
 
-import com.anz.wholesale.dto.AccountDto;
-import com.anz.wholesale.service.AccountService;
+import com.anz.wholesale.account.dto.AccountDto;
+import com.anz.wholesale.account.service.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

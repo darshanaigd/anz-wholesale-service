@@ -1,8 +1,8 @@
-package com.anz.wholesale.mapper;
+package com.anz.wholesale.transaction.mapper;
 
-import com.anz.wholesale.dto.ResponseTransactionList;
-import com.anz.wholesale.dto.TransactionDto;
-import com.anz.wholesale.entity.Transaction;
+import com.anz.wholesale.transaction.dto.ResponseTransactionList;
+import com.anz.wholesale.transaction.dto.TransactionDto;
+import com.anz.wholesale.transaction.entity.Transaction;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

@@ -1,7 +1,7 @@
-package com.anz.wholesale.repository;
+package com.anz.wholesale.account.repository;
 
-import com.anz.wholesale.entity.Account;
-import com.anz.wholesale.entity.Customer;
+import com.anz.wholesale.account.enitity.Account;
+import com.anz.wholesale.customer.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

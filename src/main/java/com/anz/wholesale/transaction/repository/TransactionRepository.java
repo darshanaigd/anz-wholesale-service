@@ -1,7 +1,7 @@
-package com.anz.wholesale.repository;
+package com.anz.wholesale.transaction.repository;
 
-import com.anz.wholesale.entity.Account;
-import com.anz.wholesale.entity.Transaction;
+import com.anz.wholesale.account.enitity.Account;
+import com.anz.wholesale.transaction.entity.Transaction;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

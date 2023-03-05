@@ -1,12 +1,11 @@
-package com.anz.wholesale.service;
+package com.anz.wholesale.account.service;
 
-import com.anz.wholesale.dto.AccountDto;
-import com.anz.wholesale.entity.Customer;
-import com.anz.wholesale.exception.AccountClientException;
-import com.anz.wholesale.exception.ApiError;
-import com.anz.wholesale.mapper.AccountMapper;
-import com.anz.wholesale.repository.AccountRepository;
-import com.anz.wholesale.repository.CustomerRepository;
+import com.anz.wholesale.account.dto.AccountDto;
+import com.anz.wholesale.customer.entity.Customer;
+import com.anz.wholesale.common.exception.AccountClientException;
+import com.anz.wholesale.account.mapper.AccountMapper;
+import com.anz.wholesale.account.repository.AccountRepository;
+import com.anz.wholesale.customer.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,8 @@
 package com.anz.wholesale.repository;
 
-import com.anz.wholesale.entity.Account;
-import com.anz.wholesale.entity.Customer;
+import com.anz.wholesale.account.enitity.Account;
+import com.anz.wholesale.account.repository.AccountRepository;
+import com.anz.wholesale.customer.entity.Customer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

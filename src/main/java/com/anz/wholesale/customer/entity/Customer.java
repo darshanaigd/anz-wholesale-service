@@ -1,4 +1,4 @@
-package com.anz.wholesale.entity;
+package com.anz.wholesale.customer.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

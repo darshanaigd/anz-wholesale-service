@@ -1,4 +1,4 @@
-package com.anz.wholesale.exception;
+package com.anz.wholesale.common.exception;
 
 import lombok.Builder;
 import lombok.Data;

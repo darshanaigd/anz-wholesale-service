@@ -1,5 +1,6 @@
-package com.anz.wholesale.entity;
+package com.anz.wholesale.account.enitity;
 
+import com.anz.wholesale.customer.entity.Customer;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

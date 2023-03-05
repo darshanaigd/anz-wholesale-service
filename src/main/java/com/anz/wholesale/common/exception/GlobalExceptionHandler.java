@@ -1,4 +1,4 @@
-package com.anz.wholesale.exception;
+package com.anz.wholesale.common.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

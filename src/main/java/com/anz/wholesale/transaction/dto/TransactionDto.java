@@ -1,4 +1,4 @@
-package com.anz.wholesale.dto;
+package com.anz.wholesale.transaction.dto;
 
 import lombok.Builder;
 import lombok.Data;

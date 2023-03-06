@@ -42,7 +42,7 @@ public class TransactionServiceTest {
     @Test
     public void getTransactionByAccountId_success() {
         //When
-        Page pageable = Mockito.mock(Page.class);
+        Page<Transaction> pageable = Mockito.mock(Page.class);
         when(transactionMapper.transactionToTransactionDto(any())).thenReturn(TransactionDto.builder().build());
         when(accountRepository.findById(any())).thenReturn(Optional.of(Account.builder().build()));
         when(transactionRepository.findAllByAccount(any(), any())).thenReturn(pageable);

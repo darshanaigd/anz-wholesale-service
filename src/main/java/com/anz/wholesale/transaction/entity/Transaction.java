@@ -19,7 +19,8 @@ import java.time.Instant;
 public class Transaction {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "transactions_seq_gen")
+    @SequenceGenerator(name = "transactions_seq_gen", sequenceName = "transactions_seq", allocationSize = 1)
     @Column
     private Long id;
 

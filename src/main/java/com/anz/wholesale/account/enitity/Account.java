@@ -20,7 +20,8 @@ public class Account {
 
     @Id
     @Column(name = "account_number")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "account_number_seq_gen")
+    @SequenceGenerator(name = "account_number_seq_gen", sequenceName = "account_number_seq", allocationSize = 1)
     private Long accountNumber;
 
     @Column(name = "account_name")

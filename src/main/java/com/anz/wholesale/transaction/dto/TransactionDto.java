@@ -9,7 +9,8 @@ import java.time.Instant;
 @Data
 @Builder
 public class TransactionDto {
-    private Long id;
+    private Long accountNumber;
+    private String accountName;
     private Instant valueDate;
     private String currency;
     private BigDecimal debitAmount;

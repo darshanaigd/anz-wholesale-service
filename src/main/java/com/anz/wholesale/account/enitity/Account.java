@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.Instant;
 
 @Data
 @Builder
@@ -30,7 +30,7 @@ public class Account {
     private String accountType;
 
     @Column(name = "balance_date")
-    private Date balanceDate;
+    private Instant balanceDate;
 
     @Column(name = "currency")
     private String currency;

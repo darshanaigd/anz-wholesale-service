@@ -21,7 +21,13 @@ resources/db/migration/V1__init.sql
 
 ## Endpoints
 to retrieve accounts - http://localhost:8080/api/accounts/{customerId}
+```
+eg. http://localhost:8080/api/accounts/1001
+```
 
 to retrieve transactions - http://localhost:8080/api/accounts/{accountId}/transactions
+```
+eg. http://localhost:8080/api/accounts/1234596799/transactions?page=0&size=50
+```
 
 

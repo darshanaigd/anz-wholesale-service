@@ -4,6 +4,7 @@ package com.anz.wholesale.service;
 import com.anz.wholesale.account.enitity.Account;
 import com.anz.wholesale.account.repository.AccountRepository;
 import com.anz.wholesale.common.exception.AccountClientException;
+import com.anz.wholesale.customer.entity.Customer;
 import com.anz.wholesale.transaction.dto.ResponseTransactionList;
 import com.anz.wholesale.transaction.dto.TransactionDto;
 import com.anz.wholesale.transaction.entity.Transaction;
@@ -44,7 +45,8 @@ public class TransactionServiceTest {
         //When
         Page<Transaction> pageable = Mockito.mock(Page.class);
         when(transactionMapper.transactionToTransactionDto(any())).thenReturn(TransactionDto.builder().build());
-        when(accountRepository.findById(any())).thenReturn(Optional.of(Account.builder().build()));
+        when(accountRepository.findById(any())).thenReturn(Optional.of(Account.builder()
+                .customer(Customer.builder().customerId(11L).build()).build()));
         when(transactionRepository.findAllByAccount(any(), any())).thenReturn(pageable);
         when(pageable.getContent()).thenReturn(List.of(Transaction.builder().build()));
 

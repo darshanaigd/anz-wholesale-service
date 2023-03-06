@@ -31,9 +31,7 @@ public class TransactionRepositoryTest {
                     .getContent();
             assertThat(transactionList).isNotNull();
             assertThat(transactionList.size()).isEqualTo(12);
-        }, () -> {
-            fail("Account is not present");
-        });
+        }, () -> fail("Account is not present"));
 
 
     }

@@ -20,7 +20,7 @@ public class AccountController {
     private final AccountService accountService;
 
     @GetMapping("/{customerId}")
-    List<AccountDto> getAccountsByCustomerId(@PathVariable Long customerId) {
+    public List<AccountDto> getAccountsByCustomerId(@PathVariable Long customerId) {
         log.info("Get accounts for customer={}", customerId);
         return accountService.getAccountsByCustomerId(customerId);
     }

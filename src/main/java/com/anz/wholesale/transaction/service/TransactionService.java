@@ -1,5 +1,6 @@
 package com.anz.wholesale.transaction.service;
 
+import com.anz.wholesale.account.controller.AccountController;
 import com.anz.wholesale.account.enitity.Account;
 import com.anz.wholesale.account.repository.AccountRepository;
 import com.anz.wholesale.common.exception.AccountClientException;
@@ -15,6 +16,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RequiredArgsConstructor
 @Service
@@ -34,7 +38,9 @@ public class TransactionService {
                                     .collect(Collectors.toList()))
                     .totalElements(transactionPage.getTotalElements())
                     .totalPages(transactionPage.getTotalPages())
-                    .build();
+                    .build().add(linkTo(methodOn(AccountController.class)
+                            .getAccountsByCustomerId(optionalAccount.get().getCustomer().getCustomerId()))
+                            .withRel("accounts"));
 
         } else {
             throw new AccountClientException(HttpStatus.BAD_REQUEST, E002);

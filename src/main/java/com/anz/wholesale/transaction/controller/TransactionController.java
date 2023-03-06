@@ -14,7 +14,7 @@ public class TransactionController {
     private final TransactionService transactionService;
 
     @GetMapping("/{accountId}/transactions")
-    ResponseTransactionList getTransactionByAccountId(@PathVariable Long accountId,
+    public ResponseTransactionList getTransactionByAccountId(@PathVariable Long accountId,
                                                       @RequestParam(defaultValue = "0") int page,
                                                       @RequestParam(defaultValue = "100") int size) {
         log.info("Get transactions for account={} page={} size={}", accountId, page, size);
